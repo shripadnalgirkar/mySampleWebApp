@@ -33,7 +33,7 @@ public class MyTestServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		System.out.println(" Received Paramas =" + request.getParameterMap());
+		System.out.println(" Received Paramas log changed =" + request.getParameterMap());
 
 		log.debug(" Received Paramas =" + request.getParameter("Name"));
 		log.debug(" Received Paramas =" + request.getParameter("Age"));
