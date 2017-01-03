@@ -34,6 +34,7 @@ public class MyTestServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		System.out.println(" Received Paramas log changed  =" + request.getParameterMap());
+		System.out.println(" Received Paramas log changed test =" + request.getParameterMap());
 
 		log.debug(" Received Paramas =" + request.getParameter("Name"));
 		log.debug(" Received Paramas =" + request.getParameter("Age"));
