@@ -1,4 +1,4 @@
-package com.test.controller;
+package com.ui.controller;
 
 import java.io.IOException;
 
@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.biz.Validator;
 
 /**
  * Servlet implementation class MyTestServlet
@@ -40,6 +42,11 @@ public class MyTestServlet extends HttpServlet {
 		log.debug(" Received Paramas =" + request.getParameter("Age"));
 		log.debug(" Received Paramas =" + request.getParameter("gender"));
 		
+		Validator validator = new Validator();
+		
+		int age = Integer.parseInt(request.getParameter("Age"));
+		
+		System.out.println("Is age valid =" + validator.validateAge(age));
 		
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
