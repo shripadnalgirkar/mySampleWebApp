@@ -1,2 +1,2 @@
-FROM tomcat:8-jre8
+FROM tomcat
 Copy ./target/myWebApp-0.0.1.war /usr/local/tomcat/webapps
